@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>质子工作室 - 官网</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        #branding img {
+            width: 70px;
+            height: 70px;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+
+        #branding h1 {
+            display: inline-block;
+            margin: 0 0 0 10px;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .showcase {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .showcase h1 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .showcase p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .team-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 calc(50% - 20px);
+            min-width: 250px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .team-member p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .join-us {
+            background-color: #2575fc;
+            color: #fff;
+            padding: 15px 25px;
+            text-align: center;
+            border-radius: 50px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .join-us:hover {
+            background-color: #1a5cbf;
+        }
+
+        .footer {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div id="branding">
+            <img src="https://github.com/cyyChenYiyi/zhizigongzuoshi/blob/5374726ff56393336545f81e4bf64549768e9b99/.github/workflows/屏幕截图%202024-08-13%20184704.png?raw=true" alt="质子工作室">
+            <h1>质子工作室</h1>
+        </div>
+    </header>
+
+    <section class="showcase container">
+        <h1>质子工作室</h1>
+        <p>成立于2022年10月20日</p>
+        <p>口号：未知</p>
+    </section>
+
+    <section class="team-info container">
+        <div class="team-member">
+            <img src="https://via.placeholder.com/80" alt="550W">
+            <h3>室长：550W</h3>
+            <p>550W 是质子工作室的创始人和灵魂人物，致力于推动创新和科技的发展。他擅长项目管理和团队协调，确保每一个项目都能顺利进行。</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/80" alt="狸忍">
+            <h3>副室长：会Python的狸忍</h3>
+            <p>狸忍是质子工作室的技术核心，精通Python编程，专注于开发和算法优化。他为工作室带来了众多技术创新，是团队不可或缺的一员。</p>
+        </div>
+    </section>
+
+    <section class="contact-info container">
+        <h2>联系我们</h2>
+        <p>室长微信: <strong>XHYXHY314</strong></p>
+        <p>副室长QQ: <strong>3302931192</strong></p>
+        <a href="https://shequ.codemao.cn/work_shop/16037" class="join-us">加入我们</a>
+    </section>
+
+    <footer class="footer container">
+        <p>质子工作室 &copy; 2022-2024</p>
+    </footer>
+</body>
+</html>
