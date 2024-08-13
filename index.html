@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -8,10 +7,10 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
-            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -24,123 +23,117 @@
         }
 
         header {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #333;
+            margin-bottom: 40px;
         }
 
         #branding img {
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             vertical-align: middle;
-            border-radius: 50%;
         }
 
         #branding h1 {
             display: inline-block;
-            margin: 0 0 0 10px;
-            font-size: 32px;
-            color: #333;
+            margin: 0 0 0 15px;
+            font-size: 36px;
+            font-weight: 700;
+            color: #fff;
         }
 
         .showcase {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 40px;
-            border-radius: 15px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
+            margin-bottom: 40px;
         }
 
         .showcase h1 {
-            font-size: 48px;
-            color: #333;
-            margin-bottom: 10px;
+            font-size: 42px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
         }
 
         .showcase p {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #666;
+            font-size: 20px;
+            color: #bbb;
+            margin: 5px 0;
         }
 
         .team-info {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
-            gap: 20px;
+            gap: 40px;
+            margin-bottom: 40px;
         }
 
         .team-member {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #111;
+            padding: 30px;
+            border-radius: 10px;
             text-align: center;
-            flex: 1 1 calc(50% - 20px);
-            min-width: 250px;
-            backdrop-filter: blur(10px);
             transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            flex: 1;
         }
 
         .team-member:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
         }
 
         .team-member img {
-            width: 80px;
-            height: 80px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .team-member h3 {
-            margin-bottom: 10px;
-            color: #333;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
         }
 
         .team-member p {
-            color: #666;
+            color: #bbb;
             font-size: 16px;
+            line-height: 1.5;
         }
 
         .contact-info {
-            background: rgba(255, 255, 255, 0.8);
+            background: #111;
             padding: 40px;
-            border-radius: 15px;
+            border-radius: 10px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .contact-info h2 {
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 20px;
-            color: #333;
+            color: #fff;
         }
 
         .contact-info p {
             font-size: 18px;
-            color: #666;
+            color: #bbb;
+            margin: 10px 0;
         }
 
         .join-us {
             background-color: #2575fc;
             color: #fff;
-            padding: 15px 25px;
-            text-align: center;
+            padding: 15px 30px;
             border-radius: 50px;
-            display: inline-block;
+            text-align: center;
             text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: 600;
             transition: background-color 0.3s ease;
+            display: inline-block;
             margin-top: 20px;
         }
 
@@ -149,14 +142,11 @@
         }
 
         .footer {
-            background: rgba(255, 255, 255, 0.8);
-            color: #333;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            backdrop-filter: blur(10px);
+            border-top: 1px solid #333;
+            margin-top: 40px;
+            color: #bbb;
         }
     </style>
 </head>
@@ -176,14 +166,14 @@
 
     <section class="team-info container">
         <div class="team-member">
-            <img src="https://via.placeholder.com/80" alt="550W">
+            <img src="https://cdn-community.codemao.cn/47/community/d2ViXzEwMDFfOTQ4MDcwM185NDgwNzAzXzE2Njg5NDY5OTUzNjVfMTgzMjZjNTA.jpeg" alt="550W">
             <h3>室长：550W</h3>
-            <p>550W 是质子工作室的创始人和灵魂人物，致力于推动创新和科技的发展。他擅长项目管理和团队协调，确保每一个项目都能顺利进行。</p>
+            <p>550W 是质子工作室的创始人和灵魂人物，致力于推动创新和科技的发展。</p>
         </div>
         <div class="team-member">
-            <img src="https://via.placeholder.com/80" alt="狸忍">
+            <img src="https://cdn-community.codemao.cn/47/community/d2ViXzEwMDFfMTk1NTI0MV8xOTU1MjQxXzE2ODkxNDcxMjgxODdfN2QyNzUwZWY.jpeg" alt="狸忍">
             <h3>副室长：会Python的狸忍</h3>
-            <p>狸忍是质子工作室的技术核心，精通Python编程，专注于开发和算法优化。他为工作室带来了众多技术创新，是团队不可或缺的一员。</p>
+            <p>狸忍是质子工作室的技术核心，精通Python编程，专注于开发和算法优化。</p>
         </div>
     </section>
 
